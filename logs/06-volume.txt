@@ -1,0 +1,46 @@
+Script started on 2026-11-21 09:57:04+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="68" LINES="41"]
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker volume create mj-dat[27m[7ma[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker volume create mj-data
+[?2004l[sudo] password for minjung: 
+Sorry, try again.
+[sudo] password for minjung: 
+Sorry, try again.
+[sudo] password for minjung: 
+sudo: 3 incorrect password attempts
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ ㅡㅑㅝㅕㅜㅎ!@07
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker volume create mj-dat[27m[7ma[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker volume create mj-data
+[?2004l[sudo] password for minjung: 
+Sorry, try again.
+[sudo] password for minjung: 
+Sorry, try again.
+[sudo] password for minjung: 
+sudo: 3 incorrect password attempts
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker volume create mj-dat[27m[7ma[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker volume create mj-data
+[?2004l[sudo] password for minjung: 
+mj-data
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker run -d --name mj-vol[27m[7m1[27m[7m -v mj-data:/data ubuntu:24.04 sleep infinity[27m[Asudo docker run -d --name mj-vol1 -v mj-data:/data ubuntu:24.04 sleep infinity
+[?2004lba21ac6b466767255004e651b7ae6f4f24b9f933fd1947511ffd37805a7e72d4
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker exec mj-vol1 sh -c '[27m[7me[27m[7mcho minjung-volume-proof > /data/proof.txt; cat /data/proof.txt'[27m[Asudo docker exec mj-vol1 sh -c 'echo minjung-volume-proof > /data/proof.txt; cat /data/proof.txt'
+[?2004lminjung-volume-proof
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker rm -f mj-vol1[27msudo docker rm -f mj-vol1
+[?2004lmj-vol1
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker run -d --name mj-vol[27m[7m2[27m[7m -v mj-data:/data ubuntu:24.04 sleep infinity[27m[Asudo docker run -d --name mj-vol2 -v mj-data:/data ubuntu:24.04 sleep infinity
+[?2004lecd7ec43161b25588f97eb218d2b3a3be5d2ce8b4b3f6b907c672a9773e4f92d
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker exec mj-vol2 cat /da[27m[7mt[27m[7ma/proof.txt[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker exec mj-vol2 cat /data/proof.txt
+[?2004lminjung-volume-proof
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker volume inspect mj-da[27m[7mt[27m[7ma[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker volume inspect mj-data
+[?2004l[
+    {
+        "CreatedAt": "2026-11-21T10:06:35+09:00",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/mj-data/_data",
+        "Name": "mj-data",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-21 10:11:52+09:00 [COMMAND_EXIT_CODE="0"]

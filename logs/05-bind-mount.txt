@@ -1,0 +1,63 @@
+Script started on 2026-11-21 09:49:29+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="68" LINES="41"]
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker run -d --name mj-bin[27m[7md[27m[7m -p 127.0.0.1:8081:80 --mount "type=bind,source=$PWD/site,target=/u[27m[7ms[27m[7mr/share/nginx/html,readonly" minjung-web:1.0[27m[A[Asudo docker run -d --name mj-bind -p 127.0.0.1:8081:80 --mount "type=bind,source=$PWD/site,target=/usr/share/nginx/html,readonly" minjung-web:1.0
+[?2004l[sudo] password for minjung: 
+716652f5b488555da3a42d2fbbdae354a460db386407424dc3b4f1871d08d649
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mcurl http://localhost:8081[27mcurl http://localhost:8081
+[?2004l<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>민정의 개발자 작업실</title>
+</head>
+<body>
+  <h1>민정의 개발자 작업실</h1>
+  <p>Docker로 만든 첫 웹 서버입니다.</p>
+  <p>변경 전: version 1</p>
+</body>
+</html>
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mnano site/index.html[27mnano site/index.html
+[?2004l[?2004h[?1049h[22;0;0t[1;41r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[39;28H(B[0;7m[ Reading... ](B[m[39;26H(B[0;7m[ Read 12 lines ](B[m[H(B[0;7m  GNU nano 7.2               site/index.html                        [1;67H(B[m[40d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute[41d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify[2d[36m<!DOCTYPE html>[3d<html [31mlang=[32m"ko"[36m>[4d<head>[5;3H<meta [31mcharset=[32m"UTF-8"[36m>[6;3H<title>[39m(B[m민정의 개발자 작업실[36m</title>[7d</head>[8d<body>[9;3H<h1>[39m(B[m민정의 개발자 작업실[36m</h1>[10;3H<p>[39m(B[mDocker로 만든 첫 웹 서버입니다.[36m</p>[11;3H<p>[39m(B[m변경 전: version 1[36m</p>[12d</body>[13d</html>[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[8G[?25l[?12l[?25h[10G[?25l[?12l[?25h [?25l[?12l[?25h[13G[?25l[?12l[?25h:[?25l[39d[K[?12l[?25h[11;15H[?25l[?12l[?25hv[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hs[?25l[?12l[?25hi[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[1;46H(B[0;7m*[67G(B[m[12;39r[12;1HM[1;41r[11;23H[K[12d 1[36m</p>[39m(B[m[?12l[?25h[?25l[12;39r[39;1H
+[1;41r[11;23H1[36m</p>[22G[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[2P[?25l[?12l[?25hg: version 1[36m</p>[11;12H[39m(B[m[?25l[?12l[?25hn: version 1[36m</p>[11;13H[39m(B[m[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h후: version 1[36m</p>[11;13H[39m(B[m[?25l[?12l[?25h:[?25l[?12l[?25h [?25l[?12l[?25hv[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hs[?25l[?12l[?25hi[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h[36m</p>[39m(B[m[K[?25l[?12l[?25h2[36m</p>[39m(B[m[?25l[40;14H    (B[0;7mM-D(B[m DOS Format   (B[0;7mM-A(B[m Append [52G(B[0;7mM-B(B[m Backup File[41;2H(B[0;7mC(B[m Cancel        (B[0;7mM-M(B[m Mac Format   (B[0;7mM-P(B[m Prepend      (B[0;7m^T(B[m Browse[K[39d(B[0;7mFile Name to Write: site/index.html                                 [39;36H(B[m[?12l[?25h[?25l[39;27H[1K (B[0;7m[ Writing... ](B[m[K[1;46H(B[0;7m [67G(B[m[39;26H(B[0;7m[ Wrote 12 lines ](B[m[40;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[52G (B[0;7m^T(B[m Execute[K[41;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify[?12l[?25h[11;24H[?25l[39d[J[41d[?12l[?25h[41;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mcurl http://localhost:8081[27mcurl http://localhost:8081
+[?2004l<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>민정의 개발자 작업실</title>
+</head>
+<body>
+  <h1>민정의 개발자 작업실</h1>
+  <p>Docker로 만든 첫 웹 서버입니다.</p>
+  <p>변경 후: version 2</p>
+</body>
+</html>
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mcat site/index.html[27mcat site/index.html
+[?2004l<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>민정의 개발자 작업실</title>
+</head>
+<body>
+  <h1>민정의 개발자 작업실</h1>
+  <p>Docker로 만든 첫 웹 서버입니다.</p>
+  <p>변경 후: version 2</p>
+</body>
+</html>
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ 
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mcurl http://localhost:8081[27mcurl http://localhost:8081
+[?2004l<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>민정의 개발자 작업실</title>
+</head>
+<body>
+  <h1>민정의 개발자 작업실</h1>
+  <p>Docker로 만든 첫 웹 서버입니다.</p>
+  <p>변경 후: version 2</p>
+</body>
+</html>
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-21 09:56:53+09:00 [COMMAND_EXIT_CODE="0"]

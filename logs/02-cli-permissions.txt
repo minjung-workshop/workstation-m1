@@ -1,0 +1,61 @@
+Script started on 2026-11-21 09:11:40+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="68" LINES="41"]
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mpwd[27mpwd
+[?2004l/home/minjung/workstation-m1
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mmkdir -p cli-practice[27mmkdir -p cli-practice
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mcd cli-practice[27mcd cli-practice
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mecho 'My workstatio[27m[7mn[27m[7m practice' > note.txt[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ echo 'My workstation practice' > note.txt
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mtouch empty.txt .hi[27m[7md[27m[7mden[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ touch empty.txt .hidden
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mls -la[27mls -la
+[?2004ltotal 12
+drwxr-xr-x 2 minjung minjung 4096 Nov 21 09:12 [0m[01;34m.[0m
+drwxr-xr-x 5 minjung minjung 4096 Nov 21 09:12 [01;34m..[0m
+-rw-r--r-- 1 minjung minjung    0 Nov 21 09:12 .hidden
+-rw-r--r-- 1 minjung minjung    0 Nov 21 09:12 empty.txt
+-rw-r--r-- 1 minjung minjung   24 Nov 21 09:12 note.txt
+[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mcat note.txt[27mcat note.txt
+[?2004lMy workstation practice
+[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mcp note.txt copy.tx[27m[7mt[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ cp note.txt copy.txt
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mls -la[27mls -la
+[?2004ltotal 16
+drwxr-xr-x 2 minjung minjung 4096 Nov 21 09:13 [0m[01;34m.[0m
+drwxr-xr-x 5 minjung minjung 4096 Nov 21 09:12 [01;34m..[0m
+-rw-r--r-- 1 minjung minjung    0 Nov 21 09:12 .hidden
+-rw-r--r-- 1 minjung minjung   24 Nov 21 09:13 copy.txt
+-rw-r--r-- 1 minjung minjung    0 Nov 21 09:12 empty.txt
+-rw-r--r-- 1 minjung minjung   24 Nov 21 09:12 note.txt
+[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mmv copy.txt renamed[27m[7m.[27m[7mtxt[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ mv copy.txt renamed.txt
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mls -la[27mls -la
+[?2004ltotal 16
+drwxr-xr-x 2 minjung minjung 4096 Nov 21 09:13 [0m[01;34m.[0m
+drwxr-xr-x 5 minjung minjung 4096 Nov 21 09:12 [01;34m..[0m
+-rw-r--r-- 1 minjung minjung    0 Nov 21 09:12 .hidden
+-rw-r--r-- 1 minjung minjung    0 Nov 21 09:12 empty.txt
+-rw-r--r-- 1 minjung minjung   24 Nov 21 09:12 note.txt
+-rw-r--r-- 1 minjung minjung   24 Nov 21 09:13 renamed.txt
+[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mrm renamed.txt[27mrm renamed.txt
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mls -la[27mls -la
+[?2004ltotal 12
+drwxr-xr-x 2 minjung minjung 4096 Nov 21 09:14 [0m[01;34m.[0m
+drwxr-xr-x 5 minjung minjung 4096 Nov 21 09:12 [01;34m..[0m
+-rw-r--r-- 1 minjung minjung    0 Nov 21 09:12 .hidden
+-rw-r--r-- 1 minjung minjung    0 Nov 21 09:12 empty.txt
+-rw-r--r-- 1 minjung minjung   24 Nov 21 09:12 note.txt
+[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mmkdir permissions[27mmkdir permissions
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mls -ld note.txt per[27m[7mm[27m[7missions[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ ls -ld note.txt permissions
+[?2004l-rw-r--r-- 1 minjung minjung   24 Nov 21 09:12 note.txt
+drwxr-xr-x 2 minjung minjung 4096 Nov 21 09:14 [0m[01;34mpermissions[0m
+[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mchmod 600 note.txt[27mchmod 600 note.txt
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mchmod 700 permissio[27m[7mn[27m[7ms[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ chmod 700 permissions
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mls -ld note.txt per[27m[7mm[27m[7missions[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ ls -ld note.txt permissions
+[?2004l-rw------- 1 minjung minjung   24 Nov 21 09:12 note.txt
+drwx------ 2 minjung minjung 4096 Nov 21 09:14 [0m[01;34mpermissions[0m
+[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mchmod 644 note.txt[27mchmod 644 note.txt
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mchmod 755 permissio[27m[7mn[27m[7ms[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ chmod 755 permissions
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mls -ld note.txt per[27m[7mm[27m[7missions[27m[A]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ ls -ld note.txt permissions
+[?2004l-rw-r--r-- 1 minjung minjung   24 Nov 21 09:12 note.txt
+drwxr-xr-x 2 minjung minjung 4096 Nov 21 09:14 [0m[01;34mpermissions[0m
+[?2004h]0;minjung@localhost: ~/workstation-m1/cli-practice[01;32mminjung@localhost[00m:[01;34m~/workstation-m1/cli-practice[00m$ [7mcd ..[27mcd ..
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-21 09:16:00+09:00 [COMMAND_EXIT_CODE="0"]

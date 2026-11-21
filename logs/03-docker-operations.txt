@@ -1,0 +1,112 @@
+Script started on 2026-11-21 09:17:03+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="68" LINES="41"]
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker run hello-world[27msudo docker run hello-world
+[?2004l[sudo] password for minjung: 
+Sorry, try again.
+[sudo] password for minjung: 
+Sorry, try again.
+[sudo] password for minjung: 
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (arm64v8)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker pull ubuntu:24.04[27msudo docker pull ubuntu:24.04
+[?2004l24.04: Pulling from library/ubuntu
+
+
+[1A[2K6542099f24f2: Pulling fs layer [1B
+[1A[2Kb3f1d541f3a8: Downloading  1.049MB/1.94MB[1B[1A[2Kb3f1d541f3a8: Downloading  1.049MB/1.94MB[1B[1A[2Kb3f1d541f3a8: Downloading  1.049MB/1.94MB[1B[1A[2Kb3f1d541f3a8: Downloading  1.049MB/1.94MB[1B[1A[2Kb3f1d541f3a8: Downloading   1.94MB/1.94MB[1B[1A[2Kb3f1d541f3a8: Downloading   1.94MB/1.94MB[1B[1A[2Kb3f1d541f3a8: Download complete [1B[2A[2K6542099f24f2: Downloading  1.049MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  1.049MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  1.049MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  1.049MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  1.049MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  1.049MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  1.049MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  1.049MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  2.097MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  2.097MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  2.097MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  2.097MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  2.097MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  2.097MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  2.097MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  3.146MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  3.146MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  3.146MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  3.146MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  3.146MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  3.146MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  3.146MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  4.194MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  4.194MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  4.194MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  4.194MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  4.194MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  4.194MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  5.243MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  5.243MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  5.243MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  5.243MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  6.291MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  6.291MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  6.291MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  6.291MB/28.97MB[2B[2A[2K6542099f24f2: Downloading   7.34MB/28.97MB[2B[2A[2K6542099f24f2: Downloading   7.34MB/28.97MB[2B[2A[2K6542099f24f2: Downloading   7.34MB/28.97MB[2B[2A[2K6542099f24f2: Downloading   7.34MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  8.389MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  8.389MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  8.389MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  9.437MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  9.437MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  9.437MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  9.437MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  10.49MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  10.49MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  10.49MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  11.53MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  11.53MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  11.53MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  12.58MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  12.58MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  13.63MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  13.63MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  13.63MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  14.68MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  14.68MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  14.68MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  15.73MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  16.78MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  16.78MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  16.78MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  17.83MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  17.83MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  18.87MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  18.87MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  19.92MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  20.97MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  20.97MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  22.02MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  22.02MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  23.07MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  23.07MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  24.12MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  25.17MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  25.17MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  26.21MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  26.21MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  27.26MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  27.26MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  28.31MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  28.97MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  28.97MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  28.97MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  28.97MB/28.97MB[2B[2A[2K6542099f24f2: Downloading  28.97MB/28.97MB[2B[2A[2K6542099f24f2: Download complete [2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 1 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 2 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 3 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 4 s[2B[2A[2K6542099f24f2: Extracting 5 s[2B[2A[2K6542099f24f2: Extracting 5 s[2B[2A[2K6542099f24f2: Extracting 5 s[2B[2A[2K6542099f24f2: Extracting 5 s[2B[2A[2K6542099f24f2: Extracting 5 s[2B[2A[2K6542099f24f2: Extracting 5 s[2B[2A[2K6542099f24f2: Extracting 5 s[2B[2A[2K6542099f24f2: Pull complete [2BDigest: sha256:9c7f200c07e3d4a03e7249d2c16bf66a51120fb876aa2242cf31451412543289
+Status: Downloaded newer image for ubuntu:24.04
+docker.io/library/ubuntu:24.04
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker images[27msudo docker images
+[?2004l                                                [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m               [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1mhello-world:latest[0m
+                    [39m1e4c05b897a7[0m       [39m22.6kB[0m         [39m10.3kB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mubuntu:24.04[0m        [39m9c7f200c07e3[0m        [39m141MB[0m         [39m30.9MB[0m        
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker run -it --name mj-ub[27m[7mu[27m[7mntu ubuntu:24.04 bash[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker run -it --name mj-ubuntu ubuntu:24.04 bash
+[?2004l[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# 
+[?2004l[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# [7mpwd[27mpwd
+[?2004l/
+[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# [7mls[27mls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;34mmedia[0m  [01;34mopt[0m   [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmnt[0m    [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m   [30;42mtmp[0m  [01;34mvar[0m
+[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# [7mecho ubuntu-container-ok[27mecho ubuntu-container-ok
+[?2004lubuntu-container-ok
+[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# [7mexit[27mexit
+[?2004lexit
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker ps -a[27msudo docker ps -a
+[?2004lCONTAINER ID   IMAGE          COMMAND    CREATED          STATUS                     PORTS     NAMES
+13f44354d33b   ubuntu:24.04   "bash"     42 seconds ago   Exited (0) 4 seconds ago             mj-ubuntu
+74d7c4a1fdbb   hello-world    "/hello"   3 minutes ago    Exited (0) 3 minutes ago             xenodochial_leavitt
+8552dc825939   hello-world    "/hello"   20 hours ago     Exited (0) 20 hours ago              zen_swartz
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker run -d --name mj-kee[27m[7mp[27m[7m ubuntu:24.04 sleep infinity[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker run -d --name mj-keep ubuntu:24.04 sleep infinity
+[?2004l575a69f22c08a0c3d15817a5963fe3c1654a392f3904e2f321e9149acc56db9b
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker exec -it mj-keep bas[27m[7mh[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker exec -it mj-keep bash
+[?2004l[?2004h]0;root@575a69f22c08: /root@575a69f22c08:/# [7mecho exec-test-ok[27mecho exec-test-ok
+[?2004lexec-test-ok
+[?2004h]0;root@575a69f22c08: /root@575a69f22c08:/# [7mexit[27mexit
+[?2004lexit
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker ps[27msudo docker ps
+[?2004lCONTAINER ID   IMAGE          COMMAND            CREATED          STATUS          PORTS     NAMES
+575a69f22c08   ubuntu:24.04   "sleep infinity"   28 seconds ago   Up 27 seconds             mj-keep
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker stop mj-keep[27msudo docker stop mj-keep
+[?2004l
+mj-keep
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker ps -a[27msudo docker ps -a
+[?2004lCONTAINER ID   IMAGE          COMMAND            CREATED              STATUS                       PORTS     NAMES
+575a69f22c08   ubuntu:24.04   "sleep infinity"   About a minute ago   Exited (137) 6 seconds ago             mj-keep
+13f44354d33b   ubuntu:24.04   "bash"             4 minutes ago        Exited (0) 3 minutes ago               mj-ubuntu
+74d7c4a1fdbb   hello-world    "/hello"           6 minutes ago        Exited (0) 6 minutes ago               xenodochial_leavitt
+8552dc825939   hello-world    "/hello"           20 hours ago         Exited (0) 20 hours ago                zen_swartz
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker start mj-keep[27msudo docker start mj-keep
+[?2004lmj-keep
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker stats --no-stream mj[27m[7m-[27m[7mkeep[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker stats --no-stream mj-keep
+[?2004lCONTAINER ID   NAME      CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O   PIDS
+575a69f22c08   mj-keep   0.00%     1.156MiB / 1.642GiB   0.07%     806B / 126B   0B / 0B     1
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker logs mj-ubuntu[27msudo docker logs mj-ubuntu
+[?2004l[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# 
+[?2004l[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# [7mpwd[27mpwd
+[?2004l/
+[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# [7mls[27mls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;34mmedia[0m  [01;34mopt[0m   [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmnt[0m    [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m   [30;42mtmp[0m  [01;34mvar[0m
+[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# [7mecho ubuntu-container-ok[27mecho ubuntu-container-ok
+[?2004lubuntu-container-ok
+[?2004h]0;root@13f44354d33b: /root@13f44354d33b:/# [7mexit[27mexit
+[?2004lexit
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker run -dit --name mj-a[27m[7mt[27m[7mtach ubuntu:24.04 bash[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ sudo docker run -dit --name mj-attach ubuntu:24.04 bash
+[?2004l55a73df7c61aeffede1c84f09db2b5509369d8a668825ecb6409db3616bca052
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker attach mj-attach[27msudo docker attach mj-attach
+[?2004l[K]0;root@55a73df7c61a: /root@55a73df7c61a:/# [K]0;root@55a73df7c61a: /root@55a73df7c61a:/# echo attach-test-ok
+[?2004lattach-test-ok
+[?2004h]0;root@55a73df7c61a: /root@55a73df7c61a:/# [7mexit[27mexit
+[?2004lexit
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7msudo docker ps -a[27msudo docker ps -a
+[?2004lCONTAINER ID   IMAGE          COMMAND            CREATED          STATUS                     PORTS     NAMES
+55a73df7c61a   ubuntu:24.04   "bash"             45 seconds ago   Exited (0) 9 seconds ago             mj-attach
+575a69f22c08   ubuntu:24.04   "sleep infinity"   4 minutes ago    Up 2 minutes                         mj-keep
+13f44354d33b   ubuntu:24.04   "bash"             6 minutes ago    Exited (0) 5 minutes ago             mj-ubuntu
+74d7c4a1fdbb   hello-world    "/hello"           9 minutes ago    Exited (0) 8 minutes ago             xenodochial_leavitt
+8552dc825939   hello-world    "/hello"           21 hours ago     Exited (0) 21 hours ago              zen_swartz
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-21 09:29:33+09:00 [COMMAND_EXIT_CODE="0"]

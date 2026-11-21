@@ -1,0 +1,12 @@
+Script started on 2026-11-21 12:38:51+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="70" LINES="41"]
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [K]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [K]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [K]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [K]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [K]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [K]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mgit config --global user.name "[27m[7mM[27m[7min Jung Kim"[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ git config --global user.name "Min Jung Kim"
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mgit config --global user.email [27m[7m"[27m[7m359398478+minjung-workshop@users.noreply.github.com"[27m[Agit config --global user.email "359398478+minjung-workshop@users.noreply.github.com"
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mgit config --global init.defaul[27m[7mt[27m[7mBranch main[27m[A]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ git config --global init.defaultBranch main
+[?2004l[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mgit config --global --list[27mgit config --global --list
+[?2004l[?1h=user.name=Min Jung Kim[m
+user.email=359398478+minjung-workshop@users.noreply.github.com[m
+init.defaultbranch=main[m
+[K[?1l>[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-21 12:40:47+09:00 [COMMAND_EXIT_CODE="0"]
