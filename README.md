@@ -270,3 +270,126 @@ WSL 확장으로 Ubuntu 작업 폴더를 열고 minjung-workshop 계정으로 �
 git clone https://github.com/minjung-workshop/workstation-m1.git
 cd workstation-m1
 ```
+
+## 14. 디렉토리 구성과 설계 기준
+
+실행에 필요한 파일, CLI 연습 파일, 수행 로그, 화면 증거를 용도별로 구분했습니다.
+평가자는 루트의 README.md에서 실행 절차와 증거 링크를 확인할 수 있습니다.
+
+| 경로 | 역할 |
+| --- | --- |
+| Dockerfile | nginx 기반 웹 서버 이미지의 빌드 방법을 정의합니다. |
+| site/ | 이미지에 복사하거나 바인드 마운트할 웹페이지 소스를 보관합니다. |
+| cli-practice/ | 파일 생성·복사·이동·삭제와 권한 변경 실습에 사용합니다. |
+| logs/ | 실제 입력한 명령어와 출력 결과를 실습 단계별로 보관합니다. |
+| evidence/ | 브라우저 접속 및 VS Code GitHub 연동 화면 증거를 보관합니다. |
+| README.md | 환경, 수행 과정, 재현 방법, 문제 해결과 증거 링크를 제공합니다. |
+| .gitignore | 편집기 임시 파일과 백업 파일이 Git에 포함되지 않도록 합니다. |
+
+## 15. 네트워크 네임스페이스와 포트 매핑
+
+이 실습의 컨테이너는 기본 bridge 네트워크에서 실행됩니다.
+컨테이너는 호스트와 분리된 네트워크 네임스페이스를 사용하므로
+자체 네트워크 인터페이스, IP 주소, 라우팅과 포트 공간을 가집니다.
+따라서 컨테이너의 localhost와 Ubuntu 호스트의 localhost는 서로 다릅니다.
+
+nginx가 컨테이너 안의 80번 포트에서 대기하더라도,
+호스트의 localhost:8080에 자동으로 연결되지는 않습니다.
+-p 127.0.0.1:8080:80 옵션으로 호스트의 루프백 주소 8080번 포트를
+컨테이너의 80번 포트로 전달하도록 설정했습니다.
+
+접속 흐름은 호스트의 localhost:8080 요청이 Docker의 포트 전달을 거쳐
+컨테이너의 nginx 80번 포트에 도착하는 방식입니다.
+8081도 별도의 호스트 포트로 다른 컨테이너의 80번 포트에 연결했습니다.
+컨테이너끼리는 포트 공간이 분리되어 모두 80번을 사용할 수 있지만,
+같은 호스트 IP의 동일한 포트를 중복 게시하면 충돌할 수 있습니다.
+
+Dockerfile의 EXPOSE 80은 사용 포트를 설명하는 메타데이터이며,
+실제 호스트 포트 게시는 docker run의 -p 옵션으로 설정합니다.
+Windows 브라우저의 WSL localhost 접근은 Windows와 WSL 사이의
+localhost 전달 기능도 거칩니다.
+
+## 16. 포트 충돌 진단과 안전한 해결 절차
+
+아래 내용은 포트 충돌 발생 시 사용할 점검 절차입니다.
+실제 충돌을 재현한 수행 로그와는 구분합니다.
+
+### 16-1. Ubuntu에서 포트 점유 확인
+
+```bash
+sudo ss -ltnp 'sport = :8080'
+sudo ss -ltnp 'sport = :8081'
+sudo docker ps --format 'table {{.Names}}\t{{.Ports}}\t{{.Status}}'
+```
+
+ss 출력의 로컬 주소·포트와 프로세스 이름·PID를 확인합니다.
+Docker 포트 게시도 확인하기 위해 docker ps 결과를 함께 비교합니다.
+lsof가 설치된 환경에서는 아래 명령어도 사용할 수 있습니다.
+
+```bash
+sudo lsof -nP -iTCP:8080 -sTCP:LISTEN
+```
+
+### 16-2. 점유 주체를 확인한 후 안전하게 해제
+
+기존 실습 컨테이너 mj-web이 8080을 사용하며 더 이상 필요 없다면
+다음과 같이 정상 종료합니다. 컨테이너를 중지하면 해당 포트 게시도 해제됩니다.
+
+```bash
+sudo docker stop mj-web
+```
+
+일반 프로세스라면 ss에서 확인한 PID를 아래 명령어로 먼저 조회합니다.
+12345는 예시이므로 실제 PID로 바꿉니다.
+
+```bash
+ps -p 12345 -o pid,user,comm,args
+```
+
+본인이 실행한 불필요한 프로세스임을 확인한 경우에만
+해당 프로그램의 종료 기능을 사용하거나 정상 종료 신호를 보냅니다.
+
+```bash
+kill -TERM 12345
+```
+
+다른 사용자의 프로세스나 시스템 서비스는 임의로 종료하지 않습니다.
+관리되는 서비스는 담당자에게 확인한 뒤 서비스의 정상 중지 절차를 사용합니다.
+종료 후 ss 명령어로 포트가 해제됐는지 다시 확인합니다.
+
+### 16-3. 기존 서비스를 유지해야 할 때 대체 포트 사용
+
+8080을 비울 수 없다면 사용하지 않는 8082를 확인하고,
+호스트 포트만 변경해 새 컨테이너를 실행합니다.
+
+```bash
+sudo ss -ltnp 'sport = :8082'
+sudo docker run -d --name mj-web-alt -p 127.0.0.1:8082:80 minjung-web:1.0
+curl -I http://localhost:8082
+```
+
+컨테이너 내부 포트는 80으로 유지하며 브라우저 접속 주소를
+http://localhost:8082 로 변경합니다.
+검증을 마치고 대체 컨테이너가 필요 없어지면 정리합니다.
+
+```bash
+sudo docker rm -f mj-web-alt
+```
+
+### 16-4. Windows 쪽 포트 점유 확인
+
+Ubuntu 쪽에서 원인을 찾지 못하면 Windows PowerShell에서도 확인합니다.
+
+```powershell
+Get-NetTCPConnection -State Listen -LocalPort 8080 -ErrorAction SilentlyContinue
+```
+
+출력의 OwningProcess 값을 확인하고 해당 PID를 조회합니다.
+12345는 실제 확인한 PID로 바꿉니다.
+
+```powershell
+Get-Process -Id 12345
+```
+
+Windows 프로그램이 점유 중이라면 해당 프로그램을 정상 종료하거나
+Docker의 호스트 포트를 8082처럼 다른 번호로 변경합니다.
