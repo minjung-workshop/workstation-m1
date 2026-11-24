@@ -257,3 +257,16 @@ wsl -d Ubuntu-24.04 -u root -- passwd minjung
 WSL 확장으로 Ubuntu 작업 폴더를 열고 minjung-workshop 계정으로 로그인했습니다.
 
 ![VS Code GitHub 로그인 증거](evidence/vscode-github.png)
+
+## 13. GitHub 저장소 제출
+
+저장소: https://github.com/minjung-workshop/workstation-m1
+
+[저장소 생성 및 업로드 수행 로그](logs/09-github-publish.txt)
+
+다른 환경에서는 아래 명령어로 내려받은 뒤 README의 재현 절차를 진행합니다.
+
+```bash
+git clone https://github.com/minjung-workshop/workstation-m1.git
+cd workstation-m1
+```

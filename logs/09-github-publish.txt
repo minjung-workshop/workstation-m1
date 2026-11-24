@@ -1,0 +1,20 @@
+Script started on 2026-11-24 13:00:41+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="69" LINES="41"]
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mgh repo create minjung-workshop/w[27m[7mo[27m[7mrkstation-m1 --public --source=. --remote=origin --push[27m[Agh repo create minjung-workshop/workstation-m1 --public --source=. --remote=origin --push
+[?2004l[0;32m✓[0m Created repository minjung-workshop/workstation-m1 on GitHub
+  https://github.com/minjung-workshop/workstation-m1
+[0;32m✓[0m Added remote https://github.com/minjung-workshop/workstation-m1.git
+Enumerating objects: 24, done.
+Counting objects:   4% (1/24)Counting objects:   8% (2/24)Counting objects:  12% (3/24)Counting objects:  16% (4/24)Counting objects:  20% (5/24)Counting objects:  25% (6/24)Counting objects:  29% (7/24)Counting objects:  33% (8/24)Counting objects:  37% (9/24)Counting objects:  41% (10/24)Counting objects:  45% (11/24)Counting objects:  50% (12/24)Counting objects:  54% (13/24)Counting objects:  58% (14/24)Counting objects:  62% (15/24)Counting objects:  66% (16/24)Counting objects:  70% (17/24)Counting objects:  75% (18/24)Counting objects:  79% (19/24)Counting objects:  83% (20/24)Counting objects:  87% (21/24)Counting objects:  91% (22/24)Counting objects:  95% (23/24)Counting objects: 100% (24/24)Counting objects: 100% (24/24), done.
+Delta compression using up to 8 threads
+Compressing objects:   5% (1/20)Compressing objects:  10% (2/20)Compressing objects:  15% (3/20)Compressing objects:  20% (4/20)Compressing objects:  25% (5/20)Compressing objects:  30% (6/20)Compressing objects:  35% (7/20)Compressing objects:  40% (8/20)Compressing objects:  45% (9/20)Compressing objects:  50% (10/20)Compressing objects:  55% (11/20)Compressing objects:  60% (12/20)Compressing objects:  65% (13/20)Compressing objects:  70% (14/20)Compressing objects:  75% (15/20)Compressing objects:  80% (16/20)Compressing objects:  85% (17/20)Compressing objects:  90% (18/20)Compressing objects:  95% (19/20)Compressing objects: 100% (20/20)Compressing objects: 100% (20/20), done.
+Writing objects:   4% (1/24)Writing objects:   8% (2/24)Writing objects:  12% (3/24)Writing objects:  16% (4/24)Writing objects:  20% (5/24)Writing objects:  25% (6/24)Writing objects:  29% (7/24)Writing objects:  33% (8/24)Writing objects:  37% (9/24)Writing objects:  41% (10/24)Writing objects:  45% (11/24)Writing objects:  50% (12/24)Writing objects:  54% (13/24)Writing objects:  58% (14/24)Writing objects:  62% (15/24)Writing objects:  66% (16/24)Writing objects:  70% (17/24)Writing objects:  75% (18/24)Writing objects:  79% (19/24)Writing objects:  83% (20/24)Writing objects:  87% (21/24)Writing objects:  91% (22/24)Writing objects:  95% (23/24)Writing objects: 100% (24/24)Writing objects: 100% (24/24), 229.45 KiB | 4.25 MiB/s, done.
+Total 24 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), done.[K
+To https://github.com/minjung-workshop/workstation-m1.git
+ * [new branch]      HEAD -> main
+branch 'main' set up to track 'origin/main'.
+[0;32m✓[0m Pushed commits to https://github.com/minjung-workshop/workstation-m1.git
+[?2004h]0;minjung@localhost: ~/workstation-m1[01;32mminjung@localhost[00m:[01;34m~/workstation-m1[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-24 13:01:07+09:00 [COMMAND_EXIT_CODE="0"]
